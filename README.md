@@ -1,5 +1,7 @@
 # AuthEngine
 Short description and motivation.
+TODO: adding google auth 
+TODO: adding facebook auth
 
 ## Usage
 How to use my plugin.
@@ -16,7 +18,7 @@ And then execute:
 $ bundle
 ```
 
-Or install it yourself as:
+Or install it yourself as: (DO NOT RUN THIS YET AS I HAVE NOT PUBLISHED THIS)
 ```bash
 $ gem install auth_engine
 ```
