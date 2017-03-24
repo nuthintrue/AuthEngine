@@ -5,7 +5,7 @@ HOST: http://polls.apiblueprint.org/
 
 Polls is a simple API allowing consumers to view polls and vote in them.
 
-## Questions Collection [/questions]
+## Questions Collection [/test]
 
 ### Test Get [GET]
 
@@ -26,7 +26,7 @@ form of choices.
 + Request (application/json)
 
         {
-            "name": "Joey"
+            "name": "Nancy"
         }
 
 + Response 201 (application/json)
@@ -38,8 +38,8 @@ form of choices.
     + Body
 
             {
-                "name": "joey",
-                "message": "Joey is nice...kinda of."
+                "name": "Nancy",
+                "message": "Awesome person!"
                 
             }
 
@@ -58,7 +58,27 @@ form of choices.
     + Body
 
             {
-                "name": "joey",
-                "message": "yay it is working"
+                "name": "Mike",
+                "message": "Mean person!"
+                
+            }
+            
++ Request (application/json)
+
+        {
+            "name": "Helen"
+        }
+
++ Response 201 (application/json)
+
+    + Headers
+
+            Location: /name
+
+    + Body
+
+            {
+                "name": "Helen",
+                "message": "The BEST OF ALL!"
                 
             }
