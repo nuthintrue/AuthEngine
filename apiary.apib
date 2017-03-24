@@ -13,7 +13,7 @@ Polls is a simple API allowing consumers to view polls and vote in them.
 
         [
             {
-                "test": "test success"
+                "test": "I just want to test"
             }
         ]
 
@@ -26,14 +26,34 @@ form of choices.
 + Request (application/json)
 
         {
-            "name": "joey"
+            "name": "Joey"
         }
 
 + Response 201 (application/json)
 
     + Headers
 
-            Location: /questions/2
+            Location: /name
+
+    + Body
+
+            {
+                "name": "joey",
+                "message": "Joey is nice...kinda of."
+                
+            }
+
++ Request (application/json)
+
+        {
+            "name": "Mike"
+        }
+
++ Response 201 (application/json)
+
+    + Headers
+
+            Location: /name
 
     + Body
 
